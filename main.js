@@ -32,17 +32,17 @@ const playDoor = (door) => {
 }
 const randomChoreDoorGenerator = () => {
   let choreDoor = Math.floor(Math.random() * numClosedDoors);
-  if(choreDoor === 1){
+  if(choreDoor === 0){
      openDoor1 = lionDoorPath;
      openDoor2 = blueDoorPath;
      openDoor3 = brownDoorPath;
      }
-  else if(choreDoor === 2){
+  else if(choreDoor === 1){
      openDoor2 = lionDoorPath;
      openDoor1 = blueDoorPath;
      openDoor3 = brownDoorPath;
      }
-   else if(choreDoor === 3){
+   else {
      openDoor3 = lionDoorPath;
      openDoor1 = blueDoorPath;
      openDoor2 = brownDoorPath;
