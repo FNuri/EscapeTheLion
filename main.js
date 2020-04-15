@@ -9,7 +9,7 @@ let startButton = document.getElementById("start");
 let closedDoorPath = 'https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg';
 let currentlyPlaying = true;
 
-const isLion = (door) => {
+const isBot = (door) => {
   if(door.src === lionDoorPath){
     return true;
   }
@@ -26,23 +26,23 @@ const playDoor = (door) => {
   if(numClosedDoors === 0){
     gameOver('win');
   }
-  else if(isLion(door)==true){
+  else if(isBot(door)==true){
     gameOver();
   }
 }
-const randomeScapeLionGenerator = () => {
-  let escapeLion = Math.floor(Math.random() * numClosedDoors);
-  if(escapeLion === 1){
+const randomChoreDoorGenerator = () => {
+  let choreDoor = Math.floor(Math.random() * numClosedDoors);
+  if(choreDoor === 1){
      openDoor1 = lionDoorPath;
      openDoor2 = blueDoorPath;
      openDoor3 = brownDoorPath;
      }
-  else if(escapeLion === 2){
+  else if(choreDoor === 2){
      openDoor2 = lionDoorPath;
      openDoor1 = blueDoorPath;
      openDoor3 = brownDoorPath;
      }
-   else if(escapeLion === 3){
+   else if(choreDoor === 3){
      openDoor3 = lionDoorPath;
      openDoor1 = blueDoorPath;
      openDoor2 = brownDoorPath;
@@ -78,7 +78,7 @@ const startRound = () => {
   numClosedDoors = 3;
   startButton.innerHTML = 'Good luck!';
   currentlyPlaying = true;
-  randomescapeLionGenerator();
+  randomChoreDoorGenerator();
 }
 
  startButton.onclick = () => {
