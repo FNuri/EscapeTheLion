@@ -102,11 +102,6 @@ background-color: #fff;
 color: #2c465a;
 }
 
-@media screen and (max-width: 1023px) {
-.site-nav li {
-  width: 33.332%;
-  margin-right: 0;
-}
 
 .site-nav a {
   padding: 15px 0;
@@ -114,12 +109,21 @@ color: #2c465a;
   margin-bottom: 5px;
   text-align: center;
 }
-}
 
+
+/* 
 @media screen and (max-width: 767px) {
 .site-nav li {
   width: 50%;
 }
+
+@media screen and (max-width: 1023px) {
+.site-nav li {
+  width: 33.332%;
+  margin-right: 0;
+}
+
+
 }
 
 /* End Site Navigation */
