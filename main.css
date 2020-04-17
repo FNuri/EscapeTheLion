@@ -1,14 +1,5 @@
 
-/* Site Navigation */
-.site-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 50px;
-  margin-top: 20px;
-  }
+
   
   .site-nav ul {
   margin: 0;
@@ -56,7 +47,7 @@
   }
   
   /* End Site Navigation */
-  
+
 body {
   background-color: #999966;
   margin: 0px;
