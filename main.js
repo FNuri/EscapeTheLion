@@ -91,6 +91,7 @@ const gameOver = (status) => {
     startButton.innerHTML = 'You win! Play again?';
   }
   else { startButton.innerHTML = 'Game over! Play     again?';
+  numClosedDoors = 0;
        }
  currentlyPlaying = false;
 }
